@@ -2,15 +2,25 @@
 title: "My first RMarkdown"
 author: "Myself!"
 date: "`r Sys.Date()`"
-output: pdf_document
+output: html_document
 ---
 
 # Header
-## subheader
-### this is an rmd file. 
-### we can write text and code here itself
+## /subheader/
+### ~~ this is an rmd file.~~ 
+### --we can write text and code here itself--
 github: [github_link](https://github.com/Hasnain-3764/Temporary_proj_initially_not_under_vc)
+This is a line with a line break.\  This is the next line.
 
+This is an inline formula: \( E = mc^2 \).
+
+This is a display formula:
+\[E = mc^2\]
+
+cat("This is a backslash: \\")
+
+This is a literal asterisk: \* not italics.
+~~some text i want to strikethrough~~
  
 ```{r}
 print("Hello World")
